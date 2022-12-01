@@ -11,12 +11,12 @@ int main() {
     Servo.period_ms(20);                    // El período del servo será de 20 ms
     Servo.pulsewidth_ms(1);                 // Servo en posición inicial
 
-    liquidDetector.mode(PullDown);          
-    led1 = OFF;
+    liquidDetector.mode(PullDown);          // Sensor de líquido en modo pull down        
+    led1 = OFF;                             // LED1 apagado
 
     while (true) {
         if ( liquidDetector == ON ) {
-            Servo.pulsewidth_us(2500);      // Si se detecta el máximo nivel de llando se baja la llave del dispenser
+            Servo.pulsewidth_us(2500);      // Si se detecta el máximo nivel de llenado de la botella se baja la llave del dispenser girando al servo
             delay(2000);                    // Delay de 2ms
             Servo.pulsewidth_ms(1);         // El servo vuelve a su posición inicial
 
