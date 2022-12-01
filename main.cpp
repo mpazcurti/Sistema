@@ -4,7 +4,7 @@
 int main() {
 
     DigitalIn liquidDetector(D2);           // Sensor de líquido conectado a D2
-    DigitalOut led1(LED1);                  
+    DigitalOut led1(LED1);                  // Led de aviso de llenado de botella en LED1
     PwmOut Servo(A0);                       // Servo conectado a A0
 
     // Set
