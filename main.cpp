@@ -23,7 +23,7 @@ int main() {
         }
         
         if ( liquidDetector == OFF ) {      // Si no se detecta el máximo nivel de llenado se sigue llenando la botella
-            led1 = OFF;                     // sin girar al servo ni encender el led  
+            led1 = OFF;                     // sin girar al servo ni encender el led de aviso de llenado 
         }
     }
 }
