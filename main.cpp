@@ -16,7 +16,7 @@ int main() {
 
     while (true) {
         if ( liquidDetector == ON ) {
-            Servo.pulsewidth_us(2500);      // Si se detecta el máximo nivel de llenado de la botella el servo gira y baja la llave del dispenser cortando el suministro de agua   
+            Servo.pulsewidth_us(2500);      // Si se detecta el máximo nivel de llenado el servo gira y baja la llave del dispenser cortando el suministro de agua   
             led1 = ON;                      // Se enciende el LED1 para indicar que se llenó la botella
             delay(2000);                    // Delay de 2ms
             Servo.pulsewidth_ms(1);         // El servo vuelve a su posición inicial
